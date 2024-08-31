@@ -266,15 +266,15 @@
 
 /* Default background images for larger screens */
 .portfolio-item-5 {
-  background-image: url('../img/backgrounds/story-1.jpg') !important;
+  background-image: url('../img/backgrounds/story-1.png') !important;
 }
 
 .portfolio-item-6 {
-  background-image: url('../img/backgrounds/story-2.jpg') !important;
+  background-image: url('../img/backgrounds/story-2.png') !important;
 }
 
 .portfolio-item-7 {
-  background-image: url('../img/backgrounds/story-3.jpg') !important;
+  background-image: url('../img/backgrounds/story-3.png') !important;
 }
 
 /* Background images for mobile screens */
@@ -300,15 +300,15 @@
 }
 
 .portfolio-item-5 {
-  background-image: url('../img/backgrounds/story-1.jpg');
+  background-image: url('../img/backgrounds/story-1.png');
 }
 
 .portfolio-item-6 {
-  background-image: url('../img/backgrounds/story-2.jpg');
+  background-image: url('../img/backgrounds/story-2.png');
 }
 
 .portfolio-item-7 {
-  background-image: url('../img/backgrounds/story-3.jpg');
+  background-image: url('../img/backgrounds/story-3.png');
 }
 
 .portfolio-item-8 {
