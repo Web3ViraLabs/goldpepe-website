@@ -262,7 +262,7 @@
   height: auto !important; /* Adjust height based on the image aspect ratio */
 }
 
-/* Specific classes for each item */
+/* Default background images for larger screens */
 .portfolio-item-5 {
   background-image: url('../img/backgrounds/story-1.jpg') !important;
 }
@@ -273,6 +273,21 @@
 
 .portfolio-item-7 {
   background-image: url('../img/backgrounds/story-3.jpg') !important;
+}
+
+/* Background images for mobile screens */
+@media (max-width: 767px) {
+  .portfolio-item-5 {
+    background-image: url('../img/backgrounds/mobile-story-1.png') !important;
+  }
+
+  .portfolio-item-6 {
+    background-image: url('../img/backgrounds/mobile-story-2.png') !important;
+  }
+
+  .portfolio-item-7 {
+    background-image: url('../img/backgrounds/mobile-story-3.png') !important;
+  }
 }
 
 /* Optional: Add a media query to ensure it applies on mobile devices */
