@@ -135,6 +135,7 @@
     --neutral-bright: var(--neutral-bright--light);
   }
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --base: var(--base--dark);
@@ -154,6 +155,7 @@
     --neutral-bright: var(--neutral-bright--dark);
   }
 }
+
 [color-scheme='light'] {
   --base: var(--base--light);
   --base-rgb: var(--base-rgb--light);
@@ -7094,7 +7096,56 @@ form textarea:required:valid {
   }
 }
 
+/* Ca copy */
 
+.cabutton {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--neutral-bright); /* Border color based on theme */
+  border-radius: var(--_radius); /* Fully rounded corners */
+  background: transparent; /* Fully transparent background */
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  font-weight: var(--font-weight-medium); /* Font weight based on theme */
+  color: var(--t-bright); /* Text color based on theme */
+  z-index: 50;
+  transition: transform var(--_animspeed-medium) ease-in-out,
+    background var(--_animspeed-medium) ease-in-out; /* Smooth hover transition */
+  font-size: var(--_size); /* Default font size */
+  cursor: pointer;
+}
+
+.cabutton:hover {
+  transform: scale(1.05); /* Slight scaling effect */
+  background: transparent; /* Keep background fully transparent on hover */
+}
+
+.cabutton p {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Light text shadow */
+  margin: 0;
+}
+
+.cabutton svg {
+  height: 1em;
+  width: 1em;
+  stroke: var(--t-bright); /* SVG stroke color based on theme */
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Dark theme overrides */
+@media (prefers-color-scheme: dark) {
+  .cabutton {
+    border: 1px solid var(--neutral-white); /* Border color for dark mode */
+    color: var(--t-bright); /* Text color for dark mode */
+  }
+
+  .cabutton svg {
+    stroke: var(--t-bright); /* SVG stroke color for dark mode */
+  }
+}
 
 /* ------------------------------------------------*/
 /* Features Contact Data End */

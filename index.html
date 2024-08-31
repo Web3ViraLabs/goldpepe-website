@@ -229,12 +229,31 @@
                               fortunes as he reigns as the banker of the Pepe kingdom
                               amidst gold's all-time highs!</em
                                  >
-                              </span>
+                              
+                                 
+                          </span>    
                               <span
                                  class="title__line d-md-flex align-items-center justify-content-xl-start loading__item"
                                  >
-                              <span>& Cryptozens</span>
-                              <a class="btn btn-circle-text hover-circle" href="#0">
+                              <!-- Main container -->
+    <div class="cacontainer">
+      <!-- Button with SVG icon and text -->
+      <button class="cabutton" id="copyButton">
+         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" stroke="white" fill="none"></rect>
+            <path
+              d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"
+              stroke="white"
+              fill="none"
+            ></path>
+          </svg>
+          
+        <p>CA: Coming soon!!</p>
+      </button>
+    </div>
+
+    
+                              <a class="btn btn-circle-text hover-circle" href="#">
                               <em></em>
                               <span class="btn-caption">BUY $GPEPE</span>
                               </a>
@@ -2144,7 +2163,7 @@
                                        <h6
                                           class="tools-cards__caption tagline-tool animate-in-up"
                                           >
-                                          BINGX
+                                          Bing X
                                        </h6>
                                     </div>
                                  </div>
@@ -2161,7 +2180,7 @@
                                        <h6
                                           class="tools-cards__caption tagline-tool animate-in-up"
                                           >
-                                          GATE.IO
+                                          Gate.io
                                        </h6>
                                     </div>
                                  </div>
@@ -2178,7 +2197,7 @@
                                        <h6
                                           class="tools-cards__caption tagline-tool animate-in-up"
                                           >
-                                          PHEMEX
+                                          Phemex
                                        </h6>
                                     </div>
                                  </div>
@@ -2195,7 +2214,7 @@
                                        <h6
                                           class="tools-cards__caption tagline-tool animate-in-up"
                                           >
-                                          COIN W
+                                          CoinW
                                        </h6>
                                     </div>
                                  </div>
@@ -3143,6 +3162,23 @@
       <script src="js/libs.min.js"></script>
       <script src="js/gallery-init.js"></script>
       <script src="js/app.js"></script>
+      <!-- JavaScript to handle button click and clipboard copy -->
+    <script>
+      document
+        .getElementById('copyButton')
+        .addEventListener('click', function () {
+          // Replace 'YOUR_CONTRACT_ADDRESS' with the actual contract address
+          const contractAddress = 'Coming soon!!';
+          navigator.clipboard.writeText(contractAddress).then(
+            function () {
+              alert('Contract address copied to clipboard');
+            },
+            function (err) {
+              console.error('Could not copy text: ', err);
+            }
+          );
+        });
+    </script>
       <!-- Load Scripts End -->
    </body>
 </html>
